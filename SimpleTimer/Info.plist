@@ -8,8 +8,6 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<true/>
 	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>

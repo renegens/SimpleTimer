@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A234d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A243d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
@@ -44,16 +44,29 @@
                                 </constraints>
                                 <state key="normal" image="off_1x"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gky-5u-UpW">
+                                <rect key="frame" x="188" y="430" width="226" height="59"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="tL1-yS-d68"/>
+                                </constraints>
+                                <state key="normal" image="off_1x"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x21-JD-VxB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gky-5u-UpW" firstAttribute="centerX" secondItem="0Gg-xL-bXB" secondAttribute="centerX" id="1mR-5c-oWG"/>
                             <constraint firstItem="5OB-bu-9QT" firstAttribute="top" secondItem="0Gg-xL-bXB" secondAttribute="bottom" constant="82" id="2mk-D1-5FF"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.5" id="4Od-Id-06J"/>
                             <constraint firstItem="EEe-EK-aJy" firstAttribute="centerX" secondItem="0Gg-xL-bXB" secondAttribute="centerX" id="6TJ-xg-itj"/>
                             <constraint firstItem="5OB-bu-9QT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KB3-VR-bmW"/>
                             <constraint firstItem="5OB-bu-9QT" firstAttribute="centerX" secondItem="EEe-EK-aJy" secondAttribute="centerX" id="MGf-Tg-Pn9"/>
                             <constraint firstItem="EEe-EK-aJy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="QYD-M2-Hdr"/>
+                            <constraint firstItem="gky-5u-UpW" firstAttribute="top" secondItem="5OB-bu-9QT" secondAttribute="top" id="b5O-0e-43u"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="top" secondItem="EEe-EK-aJy" secondAttribute="bottom" constant="8" symbolic="YES" id="pMe-PX-06Q"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="top" secondItem="EEe-EK-aJy" secondAttribute="bottom" constant="8" symbolic="YES" id="tPe-IH-0li"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="wno-pl-fZs"/>
@@ -67,6 +80,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textTime" destination="0Gg-xL-bXB" id="JWT-jz-PNy"/>
+                        <outlet property="toggleButton" destination="gky-5u-UpW" id="fhk-XY-HDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
