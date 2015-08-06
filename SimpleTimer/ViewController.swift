@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     //declaring variable for running time
     var willTimeRun = false
     
+    //getting the timer class
+    
+    var timer = Timer()
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,10 +41,18 @@ class ViewController: UIViewController {
         
         let image: UIImage!
         
+        //Check if running and assign the apropriate image
+        
         if willTimeRun{
             image = UIImage(named: "on_1x.png")
+            
+            //setting the nstimer object if true and running.
+            timer.start()
+            
         }else{
             image = UIImage(named: "off_1x.png")
+            //stopping the timer
+            timer.stop()
             
         }
         

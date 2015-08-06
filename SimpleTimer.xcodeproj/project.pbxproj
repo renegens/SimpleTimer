@@ -14,6 +14,7 @@
 		1C268B791B71044500143531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C268B771B71044500143531 /* LaunchScreen.storyboard */; };
 		1C268B841B71044500143531 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C268B831B71044500143531 /* SimpleTimerTests.swift */; };
 		1C268B8F1B71044500143531 /* SimpleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C268B8E1B71044500143531 /* SimpleTimerUITests.swift */; };
+		1C8F8B6D1B738092006A1F70 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F8B6C1B738092006A1F70 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1C268B8A1B71044500143531 /* SimpleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C268B8E1B71044500143531 /* SimpleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerUITests.swift; sourceTree = "<group>"; };
 		1C268B901B71044500143531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8F8B6C1B738092006A1F70 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1C268B6E1B71044500143531 /* AppDelegate.swift */,
 				1C268B701B71044500143531 /* ViewController.swift */,
+				1C8F8B6C1B738092006A1F70 /* Timer.swift */,
 				1C268B721B71044500143531 /* Main.storyboard */,
 				1C268B751B71044500143531 /* Assets.xcassets */,
 				1C268B771B71044500143531 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8F8B6D1B738092006A1F70 /* Timer.swift in Sources */,
 				1C268B711B71044500143531 /* ViewController.swift in Sources */,
 				1C268B6F1B71044500143531 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +485,7 @@
 				1C268B951B71044500143531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C268B961B71044500143531 /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				1C268B981B71044500143531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C268B991B71044500143531 /* Build configuration list for PBXNativeTarget "SimpleTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				1C268B9B1B71044500143531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

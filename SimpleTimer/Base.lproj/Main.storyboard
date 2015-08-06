@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gg-xL-bXB">
-                                <rect key="frame" x="130" y="255" width="343" height="93"/>
+                                <rect key="frame" x="119" y="255" width="373" height="150"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="139"/>
                                 <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -59,9 +59,9 @@
                         <animations/>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gky-5u-UpW" firstAttribute="centerX" secondItem="0Gg-xL-bXB" secondAttribute="centerX" id="1mR-5c-oWG"/>
-                            <constraint firstItem="5OB-bu-9QT" firstAttribute="top" secondItem="0Gg-xL-bXB" secondAttribute="bottom" constant="82" id="2mk-D1-5FF"/>
-                            <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1.5" id="4Od-Id-06J"/>
+                            <constraint firstItem="gky-5u-UpW" firstAttribute="centerX" secondItem="0Gg-xL-bXB" secondAttribute="centerX" constant="-4.5" id="1mR-5c-oWG"/>
+                            <constraint firstItem="5OB-bu-9QT" firstAttribute="top" secondItem="0Gg-xL-bXB" secondAttribute="bottom" constant="25" id="2mk-D1-5FF"/>
+                            <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="4Od-Id-06J"/>
                             <constraint firstItem="EEe-EK-aJy" firstAttribute="centerX" secondItem="0Gg-xL-bXB" secondAttribute="centerX" id="6TJ-xg-itj"/>
                             <constraint firstItem="5OB-bu-9QT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KB3-VR-bmW"/>
                             <constraint firstItem="5OB-bu-9QT" firstAttribute="centerX" secondItem="EEe-EK-aJy" secondAttribute="centerX" id="MGf-Tg-Pn9"/>
@@ -69,7 +69,7 @@
                             <constraint firstItem="gky-5u-UpW" firstAttribute="top" secondItem="5OB-bu-9QT" secondAttribute="top" id="b5O-0e-43u"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="top" secondItem="EEe-EK-aJy" secondAttribute="bottom" constant="8" symbolic="YES" id="pMe-PX-06Q"/>
                             <constraint firstItem="0Gg-xL-bXB" firstAttribute="top" secondItem="EEe-EK-aJy" secondAttribute="bottom" constant="8" symbolic="YES" id="tPe-IH-0li"/>
-                            <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="wno-pl-fZs"/>
+                            <constraint firstItem="0Gg-xL-bXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="wno-pl-fZs"/>
                             <constraint firstItem="EEe-EK-aJy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="yyU-Du-S4q"/>
                         </constraints>
                         <variation key="default">
