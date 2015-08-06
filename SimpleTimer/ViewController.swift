@@ -74,9 +74,47 @@ class ViewController: UIViewController {
         let image: UIImage!
         image = UIImage(named: "off_1x.png")
         textTime.text = "00:00"
+        willTimeRun = false
         toggleButton.setImage(image, forState: UIControlState.Normal)
         
     }
+    
+    func takeInput(){
+        
+        //setting the alert controller
+        
+        let alertController = UIAlertController(title: "Timer", message: "Countdown from", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        //defining the two buttons for the alert style
+        let actionOk = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: onActionOk)
+        let actionCancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: onActionCancel)
+        
+        //adding text to alert
+        alertController.addTextFieldWithConfigurationHandler(textFieldCOnfigurationHandler)
+        
+        //adding buttons to UI alert controller
+        
+        alertController.addAction(actionOk)
+        alertController.addAction(actionCancel)
+        
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func textFieldCOnfigurationHandler(textField: UITextField){
+        
+        textField.placeholder = "03:34"
+        
+    }
+    
+    func onActionOk(action: UIAlertAction){
+        
+    }
+    
+    func onActionCancel(action: UIAlertAction){
+        
+    }
+    
   
 }
 
