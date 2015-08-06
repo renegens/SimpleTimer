@@ -9,8 +9,13 @@
 import Foundation
 
 class Timer: NSObject {
+    
+    var onTickHandler: ((Int)->())?
+    
+    var onStopHandler: (()->())?
+    
     //setting the remaining time
-    var timeRemaining = 0
+    var timeRemaining = 5
     
     //setting the NSTimer object
     var timer = NSTimer()
@@ -27,11 +32,31 @@ class Timer: NSObject {
     func stop(){
         
         timer.invalidate()
+        onStopHandler!()
     } 
     
-    //testing method
+    
     func onTick(){
         
+        onTickHandler!(timeRemaining)
+        if (timeRemaining > 0){
+            timeRemaining = timeRemaining - 1
+        }else{
+            stop()
+        }
+        
         print("Timer has started")
+    }
+    
+    func setTickHandler(onTickHandler: ((Int)->())?){
+        
+        self.onTickHandler = onTickHandler
+        
+    }
+    
+    func setStopHandler(onStopHandler: (()->())?){
+        
+        self.onStopHandler = onStopHandler
+        
     }
 }

@@ -26,7 +26,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        textTime.text = "02:30"
+        
+        timer.setTickHandler(onUpdateUI);
+        
+        timer.setStopHandler(onTimerStopped);
         
     }
 
@@ -58,6 +61,20 @@ class ViewController: UIViewController {
         
         toggleButton.setImage(image, forState: UIControlState.Normal)
 
+        
+    }
+    
+    func onUpdateUI(timeRemaining: Int){
+        print("onUpdateUI called yay!")
+        
+        textTime.text = "\(timeRemaining)"
+    }
+    
+    func onTimerStopped(){
+        let image: UIImage!
+        image = UIImage(named: "off_1x.png")
+        textTime.text = "00:00"
+        toggleButton.setImage(image, forState: UIControlState.Normal)
         
     }
   
